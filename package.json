@@ -1,0 +1,19 @@
+{
+  "name": "Elastic-Beanstalk-Catmash-App",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "ejs": "latest",
+    "aws-sdk": "latest",
+    "express": "latest",
+    "body-parser": "latest",
+    "axios": "latest",
+    "redis": "latest",
+    "path": "latest",
+    "firebase": "latest",
+    "lodash": "latest"
+  },
+  "scripts": {
+    "start": "node app.js"
+  }
+}

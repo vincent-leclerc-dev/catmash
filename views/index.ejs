@@ -1,0 +1,25 @@
+<%- include common/header.ejs %>
+  <header class="header"><h1>CAT MASH</h1></header>
+  <section class="main">
+    <a href="/vote/<%= leftCat.id %>/<%= rightCat.id %>/a" class="left-half" id="leftCat">
+      <div class="img" style="background-image:url('<%= leftCat.url %>')"></div>
+    </a>
+    <a href="/vote/<%= leftCat.id %>/<%= rightCat.id %>/b" class="right-half" id="rightCat">
+      <div class="img" style="background-image:url('<%= rightCat.url %>')"></div>
+    </a>
+  </section>
+  <footer class="footer">
+    <a href="/ranking">Voir les plus beaux chats</a>
+    <p><span id="voteCounter">
+    <%if (voteCounter == 1) { %>
+      <%= voteCounter %> vote
+    <% } else if (voteCounter > 1) { %>
+        <%= voteCounter %> votes
+    <% } else { %>
+       Aucun vote pour le moment.
+    <% } %>
+    </span>
+    </p>
+
+  </footer>
+<%- include common/footer.ejs %>

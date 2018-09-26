@@ -1,0 +1,31 @@
+<%- include common/header.ejs %>
+<header id="top" class="header">
+  <h1>Classement des plus beaux chats</h1>
+  <a href="/ranking/#bottom">Allez en bas</a>
+</header>
+<section class="main">
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">Rang</th>
+        <th scope="col">Photo</th>
+        <th scope="col">Score</th>
+      </tr>
+    </thead>
+    <tbody>
+    <% for(var i=0; i<cats.length; i++) { %>
+      <tr>
+        <th scope="row"><%= cats[i].rang %></th>
+        <td><div class="img-small"  style="background-image:url('<%= cats[i].url %>')"></div></td>
+        <td><%= cats[i].score %></td>
+      </tr>
+    <% } %>
+    </tbody>
+  </table>
+</section>
+<footer id="bottom" class="footer">
+  <a href="/">Voter pour le plus beau chat</a> -
+  <a href="/ranking/#top">Allez en haut</a> -
+  <a href="/admin/index">Admin</a>
+</footer>
+<%- include common/footer.ejs %>

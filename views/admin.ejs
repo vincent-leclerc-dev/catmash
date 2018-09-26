@@ -1,0 +1,16 @@
+<%- include common/header.ejs %>
+<header class="header">
+  <h1>Admin</h1>
+</header>
+<section class="container">
+  <%if (message.length > 0) { %>
+    <div class="alert-info"><%= message %></div>
+  <% } else { %>
+    <a href="/admin/ranking/reset">Réinitialiser le classement</a>
+  <% } %>
+</section>
+<footer class="footer">
+  <a href="/">Voter pour le plus beau chat</a> -
+  <a href="/ranking">Voir les plus beaux chats</a>
+</footer>
+<%- include common/footer.ejs %>
