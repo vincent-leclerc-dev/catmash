@@ -6,12 +6,12 @@ const config = {
  },
  db: {
    firebase: {
-     FIREBASE_API_KEY : "AIzaSyAj9PVusivl3l1e3AF9lbEyRmpn7dLsLHo",
-     FIREBASE_AUTH_DOMAIN : "catmash-23ce8.firebaseapp.com",
-     FIREBASE_DB_URL : "https://catmash-23ce8.firebaseio.com",
-     FIREBASE_PROJECT_ID : "catmash-23ce8",
-     FIREBASE_STORAGE_BUCKET : "catmash-23ce8.appspot.com",
-     FIREBASE_MESSANGING_SENDER_ID : "128737851783"
+     FIREBASE_API_KEY : "xxx",
+     FIREBASE_AUTH_DOMAIN : "xxx",
+     FIREBASE_DB_URL : "xxx",
+     FIREBASE_PROJECT_ID : "xxx",
+     FIREBASE_STORAGE_BUCKET : "xxx",
+     FIREBASE_MESSANGING_SENDER_ID : "xxx"
    }
  }
 };
